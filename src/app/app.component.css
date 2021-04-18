@@ -1,0 +1,125 @@
+*{
+    box-sizing:border-box ;
+    
+  }
+  
+  nav{
+    background: #0f9d58;
+    border-left: none;
+    border-right: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 50px;
+  }
+  nav a.logo{
+    flex: 1;
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  div ul li a.nav-link{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div ul li a.nav-link{
+    text-decoration: none;
+    font-size: 21px;
+    padding: 0 15px;
+    color: #f2f2f2;
+  }
+  div ul li a.nav-link:hover{
+    color: #222222;
+    
+  }
+  .nav-dark{
+    color: #0f9d58;
+  }
+  .page-link{
+    color: #f57f26;
+  }
+   #btncolor{
+    background: #f57f26; 
+    color: #fff;
+    border-radius: 0;
+    
+  }
+  a:-webkit-any-link{
+    cursor: pointer;
+  }
+  
+  .home-categories a{
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    background: #f57f26;
+    line-height: 35px;
+    padding: 4px 14px;
+    font-weight: 750;
+    text-decoration: none;
+    
+  }
+  
+  .categeries{
+   padding-left:0 ;
+   list-style: none;
+   padding-top: 80px;
+  }
+  .home-categories{
+    margin: 10px 0;
+    text-align: center;
+  }
+  .home-categories a:hover{
+    background-color: #000;
+  }
+  .pagination-md{
+   display: center;
+   justify-content: center;
+   align-items: center;
+  }
+  .page-footer{
+    background-color:#0f9d58;
+  }
+  .text-white{
+    font-size: 17px;
+  }
+  .text-white a{
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width:800px){
+   
+    nav ul li.btn{
+      display: block;
+           
+    }
+    
+    nav ul div.items{
+      z-index: -1;
+      position: absolute;
+      top: -120;
+      width: 100%;
+      right: 0;
+      background:#f2f2f2;
+      display: inline-block;
+      transition: 0.4s;
+    }
+  nav a.logo{
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  div ul li a.nav-link{
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  }

@@ -1,0 +1,139 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.cards {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;  
+  }
+  #navtext{
+    background-color: #f57f26;
+    color: #fff;
+    font-weight: 700;
+  }
+  .card{
+    height: 260px;
+  }
+  div .contain{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  
+  
+  .cards * {
+    box-sizing: border-box;
+        
+  }
+  .card:hover{
+    
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.75);
+    
+  }
+  
+   
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    position: inherit;
+    top: 0;
+    left: 0;
+      
+  }
+  .card .info{
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 1;
+  transform: translateY(30px);
+  transition: 0.5s all;
+  }
+  .card:hover .info{
+    opacity: 0.7;
+    transform: translateY(0px);
+  }
+  .card__image:hover{
+    opacity: 0.9;
+    z-index: 100;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.75);
+  }
+  
+  .card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    text-align: center;
+}
+  
+  .card__content > p:first-of-type {
+    margin-top: 0;
+  }
+  
+  .card__content > p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .card__info {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+  }
+  .btn{
+    display: inline-block;
+    
+  }
+  .card__info i {
+    font-size: 0.8em;
+    margin-right: 8px;
+  }
+  
+  .card__link {
+    color: #64968c;
+    text-decoration: none;
+  }
+  
+  .card__link:hover {
+    text-decoration: underline;
+  }
+  .cards * {
+    box-sizing: border-box;
+  }
+  @media screen and (max-width:800px){
+    .cards {
+      margin: 0 auto;
+      max-width: 600px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+      grid-auto-rows: auto;
+      gap: 20px;
+      font-family: sans-serif;
+      padding-top: 30px;   
+      
+    }
+  }

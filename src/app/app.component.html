@@ -1,0 +1,84 @@
+
+<div class="container">
+    
+<nav class="navbar navbar-expand-md navbar-dark fixed-top justify-content-center">
+    <a class="navbar-brand" class="logo" routerLink="/">{{ logo }}</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/bollywoodmovies">Bollywood<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tamilmovies">Tamil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dualaudio">Dualaudio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/hindidubbed">Hindidubbed</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/hollywoodmovies">Hollywood</a>
+          </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search here.." aria-label="Search"  [(ngModel)]="nameSearch">
+        <button id="btncolor" class="btn btn my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</div>
+<div class="home-categories justify-content-center">
+  <ul class="categeries">
+    <a routerLink="/front">Home</a>
+    <a routerLink="/assamesemovies"> Assamese Movies</a>
+    <a routerLink="/bhojpurimovies"> Bhojpuri Movies</a>
+    <a routerLink="/bollywoodmovies"> Bollywood Movies</a>
+    <a routerLink="/dualaudio"> Dual Audio</a>
+    <a routerLink="/gujratimovies"> Gujrati Movies</a>
+    <a routerLink="/hindidubbed"> HindiDubbed</a>
+    <a routerLink="/hollywoodmovies"> Hollywood Movies</a>
+    <a routerLink="/kannadamovies">Kannada Movies</a>
+    <a routerLink="/malayalammovies"> Malayalam Movies</a>
+    <a routerLink="/marathimovies"> Marathi Movies</a>
+    <a routerLink="/pakistanimovies"> Pakistani Movies</a>
+    <a routerLink="/prerelease"> Pre Release</a>
+    <a routerLink="/punjabimovies"> Punjabi Movies</a>
+    <a routerLink="/tamilmovies"> Tamil Movies</a>
+    <a routerLink="/telugumovies"> Telugu Movies</a>
+    <a routerLink="/trailor">Trailor</a>
+    <a routerLink="/tvshows">Tv Shows</a>
+    <a routerLink="/uncategorized">Uncategorized</a>
+    <a routerLink="/webseries">Web Series</a>
+  </ul>
+</div>
+<section class="container content-wrapper">
+<nav id="navtext" class="navbar navbar-expand"><h5 style="color: white;">Always Use Original gxmovies.in or gxmovies.net Bookmark Us and Use Full <span style="color: black;">gxmovie</span> in Browser</h5></nav>
+</section>
+
+<router-outlet></router-outlet>
+          <hr>
+              <ul class="pagination pagination-md ">
+                
+                <li class="page-item active"><a class="page-link" routerLink="/bollywoodmovies">1</a></li>
+                <li class="page-item"><a class="page-link" routerLink="/hollywoodmovies">2</a></li>
+                <li class="page-item"><a class="page-link" routerLink="/assamesemovies">3</a></li>
+                <li class="page-item"><a class="page-link" routerLink="/front">....</a></li>
+                <li class="page-item"><a class="page-link" routerLink="/dualaudio">1001</a></li>
+                <li class="page-item"><a class="page-link" routerLink="/bhojpurimovies">Next></a></li>
+              </ul>
+             
+
+<footer class="page-footer font-small blue pt-4">
+  <div class="container-fluid text-center text-md-left">
+     </div>
+     <div class="footer-copyright text-center text-white py-3">© 2020 Copyright:
+      <a href="https://gxmovie.web.app/">gxmovie.web.app</a>
+   </div>
+</footer>
+  
+              
